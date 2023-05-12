@@ -5,7 +5,7 @@ import * as Sentry from "@sentry/react";
 import App from './App';
 
 Sentry.init({
-  dsn: SENTRY_AUTH_TOKEN,
+  dsn: SENTRY_DSN,
   debug: true,
   integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
   // Performance Monitoring
